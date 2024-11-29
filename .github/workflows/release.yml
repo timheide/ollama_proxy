@@ -58,6 +58,14 @@ jobs:
           command: build
           args: --release
 
+      - name: List target directory (Unix)
+        if: matrix.os != 'windows-latest'
+        run: ls -la ./target/release/
+
+      - name: List target directory (Windows)
+        if: matrix.os == 'windows-latest'
+        run: dir .\target\release\
+
       - name: Upload Release Asset
         uses: actions/upload-release-asset@v1
         env:
