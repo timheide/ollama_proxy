@@ -1,0 +1,9 @@
+
+provider_type = "anthropic"  # "perplexity" or "anthropic"
+perplexity_api_key = ""
+anthropic_api_key = ""
+
+# Server configuration
+[server]
+host = "127.0.0.1"
+port = 11434
