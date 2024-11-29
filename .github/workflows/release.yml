@@ -33,13 +33,13 @@ jobs:
       matrix:
         include:
           - os: ubuntu-latest
-            artifact_name: ollama-proxy
+            artifact_name: ollama_proxy
             asset_name: ollama-proxy-linux-amd64
           - os: windows-latest
-            artifact_name: ollama-proxy.exe
+            artifact_name: ollama_proxy.exe
             asset_name: ollama-proxy-windows-amd64.exe
           - os: macos-latest
-            artifact_name: ollama-proxy
+            artifact_name: ollama_proxy
             asset_name: ollama-proxy-darwin-amd64
 
     runs-on: ${{ matrix.os }}
